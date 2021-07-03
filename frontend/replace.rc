@@ -4,7 +4,9 @@
 //
 
 /*********************************************************/
-/* Replace, von LoRd_MuldeR <MuldeR2@GMX.de>.            */
+/* WinSed, von LoRd_MuldeR <MuldeR2@GMX.de>.             */
+/* Umbenannt von Replace auf Grund des Windows eigenen   */
+/* Replace-Befehls zum Ersetzen von Dateien.             */
 /* Deutsche Version von Manfred Müller <info@nass-ek.de> */
 /* Veröffentlicht unter der CC0 1.0 Universal-Lizenz!    */
 /*********************************************************/
@@ -49,12 +51,12 @@ BEGIN
     BEGIN
         BLOCK "000004b0"
         BEGIN
-            VALUE "ProductName", "Replace"
-            VALUE "FileDescription", "Replace"
+            VALUE "ProductName", "WinSed"
+            VALUE "FileDescription", "WinSed"
             VALUE "ProductVersion", VERSION_STR
             VALUE "FileVersion", VERSION_STR
-            VALUE "InternalName", "Replace"
-            VALUE "OriginalFilename", "Replace.exe"
+            VALUE "InternalName", "WinSed"
+            VALUE "OriginalFilename", "WinSed.exe"
             VALUE "LegalCopyright", "Erstellt von Manfred Mueller <info@nass-ek.de>"
             VALUE "CompanyName", "NASS e.K."
             VALUE "LegalTrademarks", "NASS e.K."

@@ -1,7 +1,10 @@
-/******************************************************************************/
-/* Replace, von Manfred Müller <info@nass-ek.de>                              */
-/* Veröffentlicht unter der CC0 1.0 Universal-Lizenz!                         */
-/******************************************************************************/
+/*********************************************************/
+/* WinSed, von LoRd_MuldeR <MuldeR2@GMX.de>.             */
+/* Umbenannt von Replace auf Grund des Windows eigenen   */
+/* Replace-Befehls zum Ersetzen von Dateien.             */
+/* Deutsche Version von Manfred Müller <info@nass-ek.de> */
+/* Veröffentlicht unter der CC0 1.0 Universal-Lizenz!    */
+/*********************************************************/
 
 #ifndef INC_LIBREPLACE_H
 #define INC_LIBREPLACE_H

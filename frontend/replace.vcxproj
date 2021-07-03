@@ -145,6 +145,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>winsed</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SSE2|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -254,7 +255,7 @@
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
     </ProjectReference>
     <PostBuildEvent>
-      <Command>D:\Tools\sign.cmd "$(TargetDir)replace.exe"</Command>
+      <Command>D:\Tools\sign.cmd "$(TargetDir)winsed.exe"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Signieren</Message>

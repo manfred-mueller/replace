@@ -4,10 +4,13 @@
 //
 
 /*********************************************************/
-/* Replace, von LoRd_MuldeR <MuldeR2@GMX.de>.            */
+/* WinSed, von LoRd_MuldeR <MuldeR2@GMX.de>.             */
+/* Umbenannt von Replace auf Grund des Windows eigenen   */
+/* Replace-Befehls zum Ersetzen von Dateien.             */
 /* Deutsche Version von Manfred Müller <info@nass-ek.de> */
 /* Veröffentlicht unter der CC0 1.0 Universal-Lizenz!    */
 /*********************************************************/
+
 #define LIBREPLACE_VERSION_PATCH        0
 #define WIN32_LEAN_AND_MEAN             1
 #define LIBREPLACE_VERSION_MAJOR        1

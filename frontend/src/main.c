@@ -1,5 +1,7 @@
 /*********************************************************/
-/* Replace, von LoRd_MuldeR <MuldeR2@GMX.de>.            */
+/* WinSed, von LoRd_MuldeR <MuldeR2@GMX.de>.             */
+/* Umbenannt von Replace auf Grund des Windows eigenen   */
+/* Replace-Befehls zum Ersetzen von Dateien.             */
 /* Deutsche Version von Manfred Müller <info@nass-ek.de> */
 /* Veröffentlicht unter der CC0 1.0 Universal-Lizenz!    */
 /*********************************************************/
@@ -46,11 +48,11 @@ static const CHAR *const ABORTED_MESSAGE = "Prozess wurde abgebrochen.\n";
 
 static void print_manpage(const HANDLE std_err)
 {
-	print_text(std_err, "\nReplace v" VERSION_STR ", von LoRd_MuldeR <MuldeR2@GMX.de>.\nDeutsch von Manfred M""\xc3\xbc""ller <info@nass-ek.de>.\n\n");
+	print_text(std_err, "WinSed v" VERSION_STR ", von LoRd_MuldeR <MuldeR2@GMX.de>.\nDeutsch von Manfred M""\xc3\xbc""ller <info@nass-ek.de>.\n\n");
 	print_text(std_err, "Ersetzt jedes Vorkommen von '<Original>' in '<Eingabedatei>' durch '<Ersetzung>'.\n");
 	print_text(std_err, "Der ge""\xc3\xa4""nderte Inhalt wird dann in '<Ausgabedatei>' geschrieben.\n\n");
 	print_text(std_err, "Aufruf:\n");
-	print_text(std_err, "  replace.exe [Optionen] <Original> <Ersetzung> [<Eingabedatei>] [<Ausgabedatei>]\n\n");
+	print_text(std_err, "  winsed.exe [Optionen] <Original> <Ersetzung> [<Eingabedatei>] [<Ausgabedatei>]\n\n");
 	print_text(std_err, "Optionen:\n");
 	print_text(std_err, "  -i  Gro""\xc3\x9f""-/Kleinschreibung f""\xc3\xbc""r die Zeichen 'A' bis 'Z' nicht ber""\xc3\xbc""cksichtigen. \n");
 	print_text(std_err, "  -s  Einzelne Ersetzung; ersetzt nur das *erste* Vorkommen statt alle.\n");
@@ -76,10 +78,10 @@ static void print_manpage(const HANDLE std_err)
 	print_text(std_err, "  3. Der Dateiname kann als \"-\" angegeben werden, um von STDIN zu lesen oder nach STDOUT zu schreiben.\n");
 	print_text(std_err, "  4. Die L""\xc3\xa4""nge einer Hex-Zeichenkette mu""\xc3\x9f"" *gerade* sein, mit optionalem '0x'-Pr""\xc3\xa4""fix.\n\n");
 	print_text(std_err, "Beispiele:\n");
-	print_text(std_err, "  replace.exe \"bla\" \"blubb\" \"eingabe.txt\" \"ausgabe.txt\"\n");
-	print_text(std_err, "  replace.exe -e \"bla\\nblubb\" \"qu\\tux\" \"eingabe.txt\" \"ausgabe.txt\"\n");
-	print_text(std_err, "  replace.exe \"bla\" \"blubb\" \"test.txt\"\n");
-	print_text(std_err, "  replace.exe -b 0xDEADBEEF 0xCAFEBABE \"eingabe.bin\" \"ausgabe.bin\"\n");
+	print_text(std_err, "  winsed.exe \"bla\" \"blubb\" \"eingabe.txt\" \"ausgabe.txt\"\n");
+	print_text(std_err, "  winsed.exe -e \"bla\\nblubb\" \"qu\\tux\" \"eingabe.txt\" \"ausgabe.txt\"\n");
+	print_text(std_err, "  winsed.exe \"bla\" \"blubb\" \"test.txt\"\n");
+	print_text(std_err, "  winsed.exe -b 0xDEADBEEF 0xCAFEBABE \"eingabe.bin\" \"ausgabe.bin\"\n");
 	print_text(std_err, "  type \"quell.txt\" | replace.exe \"bla\" \"blubb\" > \"ziel.txt\"\n\n");
 }
 
