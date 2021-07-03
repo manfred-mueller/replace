@@ -1,0 +1,14 @@
+*.aps
+*.opensdf
+*.sdf
+*.suo
+*.user
+/**/.vs
+/**/ipch
+/bin
+/etc/fastrand/bin
+/etc/fastrand/obj
+/etc/test-cases/**/*.txt
+/etc/test-cases/out
+/obj
+/out
