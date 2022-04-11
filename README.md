@@ -7,7 +7,7 @@ Ersetzt jedes Vorkommen von '\<Original\>' in '\<Eingabedatei\>' durch '\<Ersetz
 Der geänderte Inhalt wird dann in '\<Ausgabedatei\>' geschrieben.
 
 Aufruf:
-  replace.exe [Optionen] <Original> <Ersetzung> [<Eingabedatei>] [<Ausgabedatei>]
+  replace.exe [Optionen] \<Original\> \<Ersetzung\> [\<Eingabedatei\>] [\<Ausgabedatei\>]
 
 Optionen:
   -i  Groß-/Kleinschreibung für die Zeichen 'A' bis 'Z' nicht berücksichtigen.
@@ -15,19 +15,19 @@ Optionen:
   -a  Eingabe mit ANSI-Codepage (CP-1252) statt UTF-8 verarbeiten.
   -e  Interpretation von Backslash-Escape-Sequenzen in allen Parametern aktivieren.
   -f  Sofortiges Leeren von Dateipuffern erzwingen (kann die Leistung beeinträchtigen).
-  -b  Binär-Modus; Parameter '<Original>' und '<Ersetzung>' sind Hex-Strings.
+  -b  Binär-Modus; Parameter '\<Original\>' und '\<Ersetzung\>' sind Hex-Strings.
   -n  Normalisieren von CR+LF (Windows) und CR (MacOS) Zeilenumbrüchen zu LF (Unix).
   -g  Globbing aktivieren; der Platzhalter '?' passt auf jedes Zeichen außer CR/LF.
   -l  Wenn Globbing aktiviert ist, muß das Platzhalterzeichen auch mit CR und LF übereinstimmen.
   -j  Versucht, schreibgeschützte Dateien zu überschreiben; d.h. löscht das Nur-Lese-Flag.
-  -d  Trockenlauf; Vorkommen von '<Original>' nicht tatsächlich ersetzen.
+  -d  Trockenlauf; Vorkommen von '\<Original\>' nicht tatsächlich ersetzen.
   -v  Verbose-Modus aktivieren; zusätzliche Diagnoseinformationen nach STDERR ausgeben.
   -x  Exit-Code entspricht der Anzahl der Ersetzungen; Wert '-1' bedeutet Fehler.
   -t  Selbsttest durchführen und beenden.
   -h  Diesen Hilfetext anzeigen und beenden.
 ExitCode:
   Gibt standardmässig '0' bei Erfolg oder '1' bei Fehler zurück.
-  Wenn '<Original>' nicht gefunden wurde, wird dies *nicht* als Fehler betrachtet.
+  Wenn '\<Original\>' nicht gefunden wurde, wird dies *nicht* als Fehler betrachtet.
 
 Hinweise:
   1. Wenn *nur* eine '<Eingabedatei>' angegeben wird, wird die Datei an Ort und Stelle modifiziert!
