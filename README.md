@@ -4,7 +4,7 @@ Replace-Befehl zum Ersetzen von Dateien.
 Deutsch von Manfred Müller <info@nass-ek.de>.
 
 Ersetzt jedes Vorkommen von '\<Original\>' in '\<Eingabedatei\>' durch '\<Ersetzung\>'.
-Der geänderte Inhalt wird dann in '<Ausgabedatei>' geschrieben.
+Der geänderte Inhalt wird dann in '\<Ausgabedatei\>' geschrieben.
 
 Aufruf:
   replace.exe [Optionen] <Original> <Ersetzung> [<Eingabedatei>] [<Ausgabedatei>]
