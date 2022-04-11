@@ -30,7 +30,7 @@ ExitCode:
   Wenn '\<Original\>' nicht gefunden wurde, wird dies *nicht* als Fehler betrachtet.
 
 Hinweise:
-  1. Wenn *nur* eine '<Eingabedatei>' angegeben wird, wird die Datei an Ort und Stelle modifiziert!
+  1. Wenn *nur* eine '\<Eingabedatei>\' angegeben wird, wird die Datei an Ort und Stelle modifiziert!
   2. Wenn Dateinamen weggelassen werden, wird von STDIN gelesen und nach STDOUT geschrieben.
   3. Der Dateiname kann als "-" angegeben werden, um von STDIN zu lesen oder nach STDOUT zu schreiben.
   4. Die Länge einer Hex-Zeichenkette muß *gerade* sein, mit optionalem '0x'-Präfix.
