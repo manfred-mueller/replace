@@ -1,16 +1,16 @@
-WinSed v1.8.0, von LoRd_MuldeR <MuldeR2@GMX.de>.\n
-Umbenannt von Replace auf Grund Konflikt mit dem Windows eigenen\n
-Replace-Befehl zum Ersetzen von Dateien.\n
-Deutsch von Manfred Müller <info@nass-ek.de>.\n
+WinSed v1.8.0, von LoRd_MuldeR <MuldeR2@GMX.de>.  
+Umbenannt von Replace auf Grund Konflikt mit dem Windows eigenen  
+Replace-Befehl zum Ersetzen von Dateien.  
+Deutsch von Manfred Müller <info@nass-ek.de>.  
 
-Ersetzt jedes Vorkommen von '\<Original\>' in '\<Eingabedatei\>' durch '\<Ersetzung\>'.\n
-Der geänderte Inhalt wird dann in '\<Ausgabedatei\>' geschrieben.\n
+Ersetzt jedes Vorkommen von '\<Original\>' in '\<Eingabedatei\>' durch '\<Ersetzung\>'.  
+Der geänderte Inhalt wird dann in '\<Ausgabedatei\>' geschrieben.  
 
-Aufruf:\n
-  replace.exe [Optionen] \<Original\> \<Ersetzung\> [\<Eingabedatei\>] [\<Ausgabedatei\>]\n
+Aufruf:  
+  replace.exe [Optionen] \<Original\> \<Ersetzung\> [\<Eingabedatei\>] [\<Ausgabedatei\>]  
 
-Optionen:\n
-  -i  Groß-/Kleinschreibung für die Zeichen 'A' bis 'Z' nicht berücksichtigen.\n
+Optionen:  
+  -i  Groß-/Kleinschreibung für die Zeichen 'A' bis 'Z' nicht berücksichtigen.  
   -s  Einzelne Ersetzung; ersetzt nur das *erste* Vorkommen statt alle.
   -a  Eingabe mit ANSI-Codepage (CP-1252) statt UTF-8 verarbeiten.
   -e  Interpretation von Backslash-Escape-Sequenzen in allen Parametern aktivieren.
