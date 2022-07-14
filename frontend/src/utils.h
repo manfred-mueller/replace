@@ -237,7 +237,7 @@ static WORD *expand_wildcards(const BYTE *const needle, const DWORD needle_len, 
 
 typedef struct random_t
 {
-	DWORD a, b, c, d;
+	DWORD64 a, b, c, d;
 	DWORD counter;
 }
 random_t;
@@ -251,7 +251,7 @@ static void random_seed(random_t *const state)
 	{
 		GetSystemTimeAsFileTime(&time);
 		QueryPerformanceCounter(&counter);
-		state->b = GetTickCount();
+		state->b = GetTickCount64();
 		state->c = 65599U * time.dwHighDateTime + time.dwLowDateTime;
 		state->d = 65599U * counter.HighPart + counter.LowPart;
 	}
@@ -259,10 +259,10 @@ static void random_seed(random_t *const state)
 	state->counter = 0U;
 }
 
-static __inline DWORD random_next(random_t *const state)
+static __inline DWORD64 random_next(random_t *const state)
 {
-	DWORD t = state->d;
-	const DWORD s = state->a;
+	DWORD64 t = state->d;
+	const DWORD64 s = state->a;
 	state->d = state->c;
 	state->c = state->b;
 	state->b = s;

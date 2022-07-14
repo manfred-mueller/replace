@@ -82,7 +82,7 @@ static void print_manpage(const HANDLE std_err)
 	print_text(std_err, "  winsed.exe -e \"bla\\nblubb\" \"qu\\tux\" \"eingabe.txt\" \"ausgabe.txt\"\n");
 	print_text(std_err, "  winsed.exe \"bla\" \"blubb\" \"test.txt\"\n");
 	print_text(std_err, "  winsed.exe -b 0xDEADBEEF 0xCAFEBABE \"eingabe.bin\" \"ausgabe.bin\"\n");
-	print_text(std_err, "  type \"quell.txt\" | replace.exe \"bla\" \"blubb\" > \"ziel.txt\"\n\n");
+	print_text(std_err, "  type \"quell.txt\" | winsed.exe \"bla\" \"blubb\" > \"ziel.txt\"\n\n");
 }
 
 /* ======================================================================= */
@@ -254,9 +254,7 @@ REPLACE_MAIN(UINT, const int argc, LPCWSTR *const argv)
 
 	if((!options.self_test) && (argc - param_offset < 2U))
 	{
-//		print_text(std_err, "Fehler: Ein erforderlicher Parameter fehlt. Geben Sie \"replace -h\" f""\xc3\xbc""r Details ein!\n");
 		print_manpage(std_err);
-//		goto cleanup;
 	}
 
 	if((!options.self_test) && (!argv[param_offset][0U]))
